@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/in.css')}}">
+
+    <meta property="og:title" content="Заголовок страницы в OG">
+    <meta property="og:description" content="Описание страницы в OG">
+    <meta property="og:image" content="image/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+  </head>
+  <body>
+    <header>
+      <h1>Сайт токена HIPPO</h1>
+      <p>здесь будет дополнительная информация</p>
+      <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:8000">здесь будут ссылки на важные ресурсы</a></li>
+          <li><a href="http://127.0.0.1:8000/about">здесь будет ссылка на страницу об авторе</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section>
+          <h2>Первая секция</h2>
+          <p>описание токена и роадмап</p>
+          <img src="{{ url_for('static', filename='image/image.jpg') }}" />
+          <p>что то еще пока не придумал</p>
+        </section>
+        <section>
+          <h2>Вторая секция</h2>
+          <p>еще подумаем чем наполнить</p>
+        </section>
+        <section>
+          <h2>И третья</h2>
+          <p>всякие приколы для ссылок</p>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>соцсети и другая важная информация</p>
+    </footer>
+    <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
+  </body>
+</html>
